@@ -1,0 +1,41 @@
+.policies-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  background-image: radial-gradient(
+      at 50% 50%,
+      hsla(162, 100%, 23%, 0.173) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 50%);
+}
+
+.policies-main-content {
+  width: 80%;
+  margin-top: 10vh;
+  flex: 1;
+  padding: 20px;
+}
+.policies-title {
+  text-decoration: none;
+  font-weight: 600;
+  color: #4b830d;
+}
+
+.policies-main-content h1 {
+  margin-bottom: 1em;
+  color: #ffffff;
+}
+
+.policies-main-content h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 1em;
+}
+
+.policies-main-content p {
+  color: #bbb9b9;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}

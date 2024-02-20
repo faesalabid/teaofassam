@@ -1,0 +1,355 @@
+.checkout-main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0;
+  margin-top: 10vh;
+  background-color: #000;
+  background-image: radial-gradient(
+      at 50% 50%,
+      hsla(162, 100%, 21%, 0.173) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 50%);
+}
+.checkout-form {
+  width: 100%;
+  display: flex;
+  min-height: 300px;
+  justify-content: center;
+}
+
+input[readonly] {
+  cursor: not-allowed;
+}
+
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-form label {
+  display: block;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff32;
+  border-radius: 4px;
+  color: #c0c0c0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+#mr {
+  margin-right: 5px;
+}
+
+#ml {
+  margin-left: 5px;
+}
+#mr2 {
+  margin-right: 5px;
+}
+
+#ml2 {
+  margin-left: 5px;
+}
+
+.checkout-form input[type="submit"] {
+  width: 80%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff18;
+  border: 1px solid #ffffff1a;
+  color: #d4d4d4;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-form input[type="submit"]:hover {
+  background-color: #ffffff20;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.city-zip,
+.country-state {
+  display: flex;
+}
+
+.checkout-right,
+.checkout-left {
+  width: 40%;
+  margin: 10px 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  color: #cbcbcb;
+  flex-direction: column;
+}
+.checkout-right {
+  align-items: center;
+  padding-top: 20px;
+}
+
+.checkout-left {
+  padding: 20px 80px;
+}
+
+.checkout-left label {
+  padding: 15px 0;
+}
+
+.checkout-left input {
+  padding: 10px;
+}
+
+.order-summary {
+  border: 1px solid #ffffff32;
+  border-radius: 4px;
+  padding: 20px 15px 20px 20px;
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff32;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-totals .order-item {
+  padding-top: 10px;
+}
+
+.order-item.total {
+  font-weight: bold;
+}
+.checkout-product-image {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #ffffff32;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.card-information {
+  width: 80%;
+  background-color: #10101057;
+  border: 1px solid #ffffff32;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.test-mode {
+  width: 120px;
+  text-align: center;
+  background-color: #7d7d0041;
+  border: 1px solid #ffffff22;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.paste-image {
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+.demo-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+  color: #181818;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.demo-details:hover {
+  background-color: #ededed;
+}
+
+.card-information label {
+  display: block;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.card-information input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.expiry-cvc {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.expiry-cvc input {
+  flex: 1;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.card-icons img {
+  box-shadow: -6px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  height: 24px;
+  width: auto;
+  margin-left: -10px;
+}
+.card-icons img:nth-child(1) {
+  z-index: 1;
+}
+.card-icons img:nth-child(2) {
+  z-index: 2;
+}
+.card-icons img:nth-child(3) {
+  z-index: 3;
+}
+.card-icons img:nth-child(4) {
+  z-index: 4;
+}
+
+#card-number {
+  background: url("path-to-card-icon.png") no-repeat right;
+  background-size: contain;
+}
+
+#expiry {
+  max-width: 100px;
+}
+
+#cvc {
+  max-width: 100px;
+  background: url("../assets/cvv.png") no-repeat right;
+  background-size: 25px;
+}
+
+.checkout-form .error-input {
+  border: 1px solid rgba(139, 0, 0, 0.708);
+  animation: shake 0.5s ease-in-out;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #c0c0c0 !important;
+  box-shadow: 0 0 0px 1000px #272727 inset;
+}
+
+input:-moz-ui-autofill {
+  background: #000 !important;
+  color: #c0c0c0 !important;
+}
+
+@media (max-width: 1350px) {
+  .checkout-main-container {
+    width: 100vw;
+  }
+  .checkout-form {
+    width: 90%;
+  }
+  .checkout-left,
+  .checkout-right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 890px) {
+  .checkout-main-container {
+    height: auto;
+  }
+  .checkout-form {
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+  }
+  .checkout-left,
+  .checkout-right {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .checkout-left {
+    padding: 1vh 8vw;
+  }
+  .city-zip,
+  .country-state,
+  .city-zip input,
+  .country-state input,
+  .expiry-cvc input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .checkout-main-container {
+    padding: 10px;
+
+    height: auto;
+  }
+  .checkout-form {
+    width: 90vw;
+    height: auto;
+  }
+  .checkout-left,
+  .checkout-right {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .order-summary,
+  .card-information {
+    width: 100%;
+  }
+}

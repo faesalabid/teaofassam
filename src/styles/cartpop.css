@@ -1,0 +1,213 @@
+.popupcart {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.822);
+  height: 100%;
+  width: 370px;
+  right: 0;
+  transition: right 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: cartAnimation 0.3s;
+}
+
+@keyframes cartAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.popup-top {
+  height: 76%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: #000;
+  background-image: radial-gradient(
+      at 50% 50%,
+      hsla(162, 100%, 18%, 0.173) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 50%);
+}
+
+.popup-top::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+.popup-top::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.popup-top::-webkit-scrollbar-thumb {
+  background-color: rgb(105, 105, 105);
+  border-radius: 8px;
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background-color: rgba(31, 31, 31, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.popup-head {
+  width: 100%;
+  height: 6%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 18px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 1px solid #ffffff2b;
+}
+.popup-head img {
+  padding: 0 5px;
+  height: 100%;
+  background-color: #fe0000;
+  cursor: pointer;
+}
+.popup-product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 220px;
+  min-width: 97%;
+  padding: 20px 0;
+  margin: 5px 0;
+  box-shadow: 5px 5px 30px 2px rgba(0, 0, 0, 0.086);
+  background-color: #0e0e0e66;
+  border: 1px solid #ffffff1a;
+  border-radius: 8px;
+}
+
+.popup-product-card:hover {
+  box-shadow: 5px 5px 30px 2px rgba(0, 0, 0, 0.086);
+  background-color: #1b1b1b61;
+  transition: 0.5s;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-around;
+}
+.card-top > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.popup-counter {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  width: 55%;
+  background-color: #ffffff16;
+  border: 1px solid #ffffff1a;
+  border-radius: 15px;
+}
+.popup-counter > p {
+  font-size: 1rem;
+  color: #cacaca;
+}
+.popup-product-details {
+  font-size: 1rem;
+  height: auto;
+  width: 50%;
+  padding: 12px 0 17px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f0f0f0;
+}
+.popup-product-details > p {
+  font-size: 0.9rem;
+  color: #d4d4d4;
+}
+.popup-counter > button {
+  padding: 0.3rem 0.9rem;
+  border-style: none;
+  border-radius: 5px;
+  color: #dcdcdc;
+  cursor: pointer;
+  background-color: transparent;
+}
+.price-delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 32px 0 32px;
+  color: #c4c4c4;
+}
+
+.price-delete img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.price-delete p {
+  font-size: 1rem;
+}
+.popup-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  color: #bcbcbc;
+  border-top: 1px solid #ffffff2b;
+  font-size: 1rem;
+  background-color: #000;
+  width: 100%;
+}
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  width: 100%;
+}
+.buy {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #d4d4d4;
+  background-color: #ffffff16;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
+.buy:hover {
+  background-color: #ffffff20;
+}
+
+@media only screen and (max-width: 625px) {
+  .popupcart {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .popup-product-card {
+    min-width: 95%;
+  }
+}

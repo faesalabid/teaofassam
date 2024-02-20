@@ -1,0 +1,261 @@
+.gift-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gift-container {
+  width: 90%;
+  margin: 40px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.gift-bg-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/herobgg3.webp");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(40%) blur(3px);
+}
+
+.gift-info {
+  width: 30%;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000000c9;
+  text-align: justify;
+}
+
+.gift-boxes-text {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.gift-heading {
+  margin-bottom: 10px;
+}
+
+.gift-products {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.gift-product {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 380px;
+  padding: 10px 0;
+  border-radius: 8px;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: #ffffff15;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.gift-product:hover {
+  box-shadow: 5px 5px 30px 2px rgba(0, 0, 0, 0.086);
+  background-color: #ffffff18;
+  transition: 0.8s;
+}
+
+.gift-brand {
+  color: #d7d7d7;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.gift-name {
+  all: unset;
+  margin: 8px 8px 8px 0;
+  color: #b08977;
+  font-style: bold;
+  font-size: 1.3rem;
+}
+
+.gift-image {
+  height: 25vh;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.gift-details {
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+
+.gift-category {
+  color: #eaeaeaac;
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0 8px 8px 0;
+}
+
+.gift-price {
+  all: unset;
+  color: #acfed8;
+  font-size: 1.1rem;
+}
+
+.gift-size {
+  color: #fff;
+  font-weight: 80;
+  margin: 0 8px 8px 0;
+  font-size: 1rem;
+}
+
+.gift-btns {
+  display: flex;
+}
+
+.gift-padd-to-cart,
+.gift-padd-to-wish {
+  all: unset;
+  text-align: center;
+  background-color: #ffffff0f;
+  border-right: 1px solid #ffffff1a;
+  border-bottom: 1px solid #ffffff1a;
+  min-width: 40px;
+  max-width: 60px;
+  margin-top: 10px;
+  padding: 0 12px;
+}
+
+.gift-padd-to-cart {
+  border-radius: 0 20px 20px 0;
+}
+
+.gift-padd-to-wish {
+  border-radius: 20px 0 0 20px;
+  margin-right: 3px;
+}
+
+.gift-padd-to-cart img,
+.gift-padd-to-wish img {
+  padding: 3px 0 0 0;
+  width: 30px;
+  height: 28px;
+}
+
+.gift-padd-to-cart:hover,
+.gift-padd-to-wish:hover {
+  background-color: #ffffff20;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1290px) {
+  .gift-info {
+    width: 45%;
+    line-height: 1.4;
+  }
+  .gift-boxes-text {
+    font-size: 1.2rem;
+  }
+  .gift-heading {
+    font-size: 1.3rem;
+  }
+  .gift-subtitles {
+    font-size: 0.8rem;
+  }
+
+  .gift-products {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .gift-products {
+    flex-direction: unset;
+  }
+  .gift-product {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 33vw;
+    min-width: 30vw;
+    padding: 18px 0;
+    max-height: 39vh;
+    min-height: 35vh;
+  }
+
+  .gift-image {
+    max-height: 32vw;
+    max-width: 32vw;
+  }
+
+  .gift-details {
+    margin-top: 10px;
+    padding: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gift-info {
+    max-width: 380px;
+    min-width: 85%;
+    padding: 20px 2px;
+  }
+  .gift-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    place-items: center;
+  }
+  .gift-name {
+    font-size: 1rem;
+  }
+  .gift-price {
+    font-size: 1rem;
+  }
+  .gift-size {
+    font-size: 0.8rem;
+  }
+  .add-to-cart {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .gift-product {
+    max-width: 40vw;
+    min-width: 30vw;
+  }
+
+  .gift-image {
+    max-height: 38vw;
+    max-width: 38vw;
+    padding: 10px 0 0 0;
+  }
+  .gift-details {
+    margin: 2px 0;
+  }
+
+  .gift-padd-to-cart,
+  .gift-padd-to-wish {
+    width: 10px;
+  }
+  .gift-padd-to-cart img,
+  .gift-padd-to-wish img {
+    width: 25px;
+  }
+  .gift-name {
+    font-size: 0.8rem;
+  }
+  .gift-price {
+    font-size: 0.7rem;
+  }
+  .gift-size {
+    font-size: 0.75rem;
+  }
+}

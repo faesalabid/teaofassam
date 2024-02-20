@@ -1,0 +1,32 @@
+.footer-main {
+  width: 100%;
+}
+.footer-elements {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 15vh;
+  border-top: 1px solid #96969627;
+  width: 100%;
+  color: #c0c0c0;
+  background-color: #000000;
+}
+.footer-elements li {
+  padding: 2px 10px;
+}
+
+@media (max-width: 890px) {
+  .footer-elements {
+    padding-bottom: 50px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 625px) {
+  .footer-elements {
+    font-size: 0.6rem;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,107 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-image: radial-gradient(
+      at 50% 50%,
+      hsla(162, 77%, 40%, 0.121) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 82% 65%, #111d2765 0, transparent 50%);
+}
+
+.contact-head {
+  font-size: 1.3rem;
+  color: #d6d6d6;
+  align-self: flex-start;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.contact-form {
+  height: 90vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form input {
+  color: #f6f6f6;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff32;
+  background-color: transparent;
+}
+
+.contact-form input[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: #ffffff1f;
+  border: 1px solid #ffffff1a;
+  font-size: 16px;
+  color: #d4d4d4;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #ffffff29;
+}
+
+.contact-form input.contact-error-input {
+  border: 1px solid rgba(151, 0, 0, 0.668);
+  animation: shake 0.5s ease-in-out;
+}
+.contact-text {
+  color: #dfdfdf;
+  width: 100%;
+  height: 110px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ffffff32;
+  background-color: transparent;
+}
+.thanks {
+  padding: 10px;
+  align-self: flex-start;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #4d8908fd;
+  border-radius: 5px;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    width: 90vw;
+  }
+  .contact-head {
+    font-size: 1rem;
+  }
+}
